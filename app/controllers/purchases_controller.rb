@@ -5,12 +5,12 @@ class PurchasesController < ApplicationController
   def index
     @purchases = Purchase.all
 
-    render json: @purchases.to_json(include: :users)
+    render json: @purchases.to_json(include: {users: {only: :email}})
   end
 
   # GET /purchases/1
   def show
-    render json: @purchase.to_json(include: :users)
+    render json: @purchase.to_json(include: {users: {only: :email}})
   end
 
   # POST /purchases
