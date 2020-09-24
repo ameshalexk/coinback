@@ -8,9 +8,9 @@
 
 Purchase.create([
 
-    {"coin":"ripple","price":0.26,"shares":750},
-    {"coin":"litecoin","price":45,"shares":5},
-    {"coin":"ethereum","price":289,"shares":0.4}
+    {"coin":"ripple","price":0.26},
+    {"coin":"litecoin","price":45},
+    {"coin":"ethereum","price":289}
 
     
   ])
