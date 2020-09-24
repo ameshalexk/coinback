@@ -6,15 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Purchase.create([
 
-    {"coin":"ripple","price":0.26},
-    {"coin":"litecoin","price":45},
-    {"coin":"ethereum","price":289}
+User.create([
 
-    
-  ])
+  {"username":"amesh","password":"amesh"}
 
+  
+])
 
 
   
