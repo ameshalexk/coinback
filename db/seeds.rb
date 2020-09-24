@@ -7,9 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create([
+Purchase.create([
 
-  {"username":"amesh","password":"amesh"}
+  {"coin":"ripple","price":"100"},
+  {"coin":"bitcoin","price":"10000"}
 
   
 ])
