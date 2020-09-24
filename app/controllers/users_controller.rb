@@ -13,6 +13,15 @@ class UsersController < ApplicationController
     render json: @user.to_json(include: :purchases, except: [:password])
   end
 
+  def login
+    user = User.find_by(username: params[:user][:username])
+    if user && user.authenticate(params[:user][:password])
+      render json: {status: 200, user: user}
+    else
+      render json: {status: 401, message: "Unauthorized"}
+    end
+end
+
   # POST /users
   def create
     @user = User.new(user_params)

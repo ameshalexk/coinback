@@ -16,12 +16,6 @@ Purchase.create([
   ])
 
 
-User.create([
 
-    {"email":"1@1.com","password":"1"},
-    {"email":"2@2.com","password":"2"},
-    {"email":"3@3.com","password":"3"}
-    
-  ])
   
   puts "Seeded database"
